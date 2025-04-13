@@ -1,5 +1,5 @@
 if (-not $HOOKZILLA_URL) {
-    Write-Error "Missing webhook URL in HOOKZILLA_URL environment variable"
+    Write-Error "Missing webhook URL in HOOKZILLA_URL variable"
     exit
 }
 $webhookUrl = $HOOKZILLA_URL
