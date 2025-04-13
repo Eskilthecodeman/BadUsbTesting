@@ -1,8 +1,8 @@
-if (-not $env:HOOKZILLA_URL) {
+if (-not $HOOKZILLA_URL) {
     Write-Error "Missing webhook URL in HOOKZILLA_URL environment variable"
     exit
 }
-$webhookUrl = $env:HOOKZILLA_URL
+$webhookUrl = $HOOKZILLA_URL
 
 $username = $env:USERNAME
 $computername = $env:COMPUTERNAME
